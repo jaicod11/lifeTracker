@@ -402,7 +402,7 @@ function HabitModal({ habit, onClose, onSave }) {
                         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.35rem' }}>
                             {HABIT_ICONS.map(ic => (
                                 <button key={ic} type="button" onClick={() => setForm(f => ({ ...f, icon: ic }))} style={{
-                                    width: 36, height: 36, borderRadius: '0.5rem', border: 'none', cursor: 'pointer',
+                                    width: 36, height: 36, borderRadius: '0.5rem', cursor: 'pointer',
                                     background: form.icon === ic ? 'rgba(0,212,170,0.15)' : '#25293a',
                                     border: `1px solid ${form.icon === ic ? '#00d4aa' : 'transparent'}`,
                                     display: 'flex', alignItems: 'center', justifyContent: 'center',

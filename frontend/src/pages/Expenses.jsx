@@ -95,7 +95,7 @@ function ExpenseModal({ expense, onClose, onSave }) {
                             {Object.entries(CAT_CONFIG).map(([key, cfg]) => (
                                 <button key={key} type="button" onClick={() => setForm(f => ({ ...f, category: key }))} style={{
                                     display: 'flex', alignItems: 'center', gap: '0.375rem',
-                                    padding: '0.35rem 0.75rem', borderRadius: '9999px', border: 'none', cursor: 'pointer',
+                                    padding: '0.35rem 0.75rem', borderRadius: '9999px', cursor: 'pointer',
                                     background: form.category === key ? 'rgba(0,212,170,0.15)' : '#25293a',
                                     border: `1px solid ${form.category === key ? '#00d4aa' : 'transparent'}`,
                                     color: form.category === key ? '#00d4aa' : '#64748b',
