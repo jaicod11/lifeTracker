@@ -76,7 +76,7 @@ function GoalModal({ goal, onClose, onSave }) {
                         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.35rem' }}>
                             {CATS.map(c => (
                                 <button key={c} type="button" onClick={() => setForm(f => ({ ...f, category: c }))} style={{
-                                    padding: '0.3rem 0.75rem', borderRadius: '9999px', border: 'none', cursor: 'pointer',
+                                    padding: '0.3rem 0.75rem', borderRadius: '9999px', cursor: 'pointer',
                                     background: form.category === c ? 'rgba(0,212,170,0.15)' : '#25293a',
                                     border: `1px solid ${form.category === c ? '#00d4aa' : 'transparent'}`,
                                     color: form.category === c ? '#00d4aa' : '#64748b',

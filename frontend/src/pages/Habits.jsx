@@ -177,7 +177,7 @@ function HabitCard({ habit, onComplete, onUncomplete, onEdit, onDelete, animatin
             <button
                 onClick={e => { e.stopPropagation(); done ? onUncomplete(habit._id) : onComplete(habit._id); }}
                 style={{
-                    width: 48, height: 48, borderRadius: '50%', border: 'none', flexShrink: 0,
+                    width: 48, height: 48, borderRadius: '50%', flexShrink: 0,
                     background: done ? '#00d4aa' : 'transparent',
                     border: done ? 'none' : '2px solid rgba(0,212,170,0.3)',
                     cursor: 'pointer',
