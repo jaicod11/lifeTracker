@@ -64,3 +64,4 @@ coverage/
 *.pem
 *.key
 *.cert
+.env
