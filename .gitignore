@@ -1,12 +1,10 @@
-cat .gitignore | grep .env
-
 # ── Dependencies ──────────────────────────────────────────
 node_modules/
 .pnp
 .pnp.js
 
 # ── Environment Variables (NEVER commit these) ─────────────
-.env/
+.env
 .env.local
 .env.development
 .env.development.local
@@ -64,4 +62,3 @@ coverage/
 *.pem
 *.key
 *.cert
-.env
